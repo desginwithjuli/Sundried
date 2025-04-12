@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sundried - Premium Organic Sun-dried Vegetables & Spices</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#5a7c4c',secondary:'#e9b949'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Poppins', sans-serif;
+}
+.hero-section {
+background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 40%, rgba(255, 255, 255, 0.1) 100%), url('https://readdy.ai/api/search-image?query=Organic%20sun-dried%20vegetables%20and%20spices%20arranged%20beautifully%20under%20natural%20sunlight.%20The%20scene%20shows%20various%20colorful%20vegetables%20laid%20out%20on%20traditional%20drying%20racks%20with%20a%20warm%20golden%20sunlight.%20The%20left%20side%20of%20the%20image%20has%20a%20clean%20white%20gradient%20that%20smoothly%20transitions%20to%20show%20the%20full%20scene%20on%20the%20right.&width=1600&height=800&seq=1&orientation=landscape');
+background-size: cover;
+background-position: center;
+}
+.custom-checkbox {
+appearance: none;
+-webkit-appearance: none;
+width: 20px;
+height: 20px;
+border: 2px solid #5a7c4c;
+border-radius: 4px;
+outline: none;
+cursor: pointer;
+position: relative;
+}
+.custom-checkbox:checked {
+background-color: #5a7c4c;
+}
+.custom-checkbox:checked::after {
+content: "";
+position: absolute;
+top: 2px;
+left: 6px;
+width: 5px;
+height: 10px;
+border: solid white;
+border-width: 0 2px 2px 0;
+transform: rotate(45deg);
+}
+.custom-switch {
+position: relative;
+display: inline-block;
+width: 48px;
+height: 24px;
+}
+.custom-switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #e2e8f0;
+transition: .4s;
+border-radius: 24px;
+}
+.slider:before {
+position: absolute;
+content: "";
+height: 18px;
+width: 18px;
+left: 3px;
+bottom: 3px;
+background-color: white;
+transition: .4s;
+border-radius: 50%;
+}
+input:checked + .slider {
+background-color: #5a7c4c;
+}
+input:checked + .slider:before {
+transform: translateX(24px);
+}
+.custom-range {
+-webkit-appearance: none;
+width: 100%;
+height: 6px;
+border-radius: 5px;
+background: #e2e8f0;
+outline: none;
+}
+.custom-range::-webkit-slider-thumb {
+-webkit-appearance: none;
+appearance: none;
+width: 18px;
+height: 18px;
+border-radius: 50%;
+background: #5a7c4c;
+cursor: pointer;
+}
+.custom-range::-moz-range-thumb {
+width: 18px;
+height: 18px;
+border-radius: 50%;
+background: #5a7c4c;
+cursor: pointer;
+border: none;
+}
+.product-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+</style>
+</head>
+<body class="bg-white">
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-white shadow-sm">
+<div class="container mx-auto px-4 py-4 flex items-center justify-between">
+<a href="#" class="flex items-center gap-2">
+<span class="text-3xl font-['Pacifico'] text-primary">Sundried</span>
+<img src="https://static.readdy.ai/image/7009b1f5ead32cc1f6e73aca2d7cc4dc/1bac46e9397671bf9e39f1c81b496461.png" alt="Sundried Logo" class="h-8">
+</a>
+<nav class="hidden md:flex items-center space-x-8">
+<a href="#" class="text-gray-800 font-medium hover:text-primary transition-colors">Home</a>
+<a href="#" class="text-gray-800 font-medium hover:text-primary transition-colors">About</a>
+<a href="#" class="text-gray-800 font-medium hover:text-primary transition-colors">Products</a>
+<a href="#" class="text-gray-800 font-medium hover:text-primary transition-colors">Reviews</a>
+<a href="#" class="text-gray-800 font-medium hover:text-primary transition-colors">Contact</a>
+</nav>
+<div class="flex items-center space-x-4">
+<div class="w-10 h-10 flex items-center justify-center text-gray-700 hover:text-primary cursor-pointer">
+<i class="ri-search-line ri-xl"></i>
+</div>
+<div class="relative w-10 h-10 flex items-center justify-center text-gray-700 hover:text-primary cursor-pointer">
+<i class="ri-shopping-cart-2-line ri-xl"></i>
+<span class="absolute -top-1 -right-1 bg-primary text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">3</span>
+</div>
+<div class="w-10 h-10 flex items-center justify-center text-gray-700 hover:text-primary cursor-pointer md:hidden">
+<i class="ri-menu-line ri-xl"></i>
+</div>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="hero-section min-h-[600px] flex items-center">
+<div class="container mx-auto px-4 w-full">
+<div class="max-w-xl">
+<h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Sun-Dried Goodness, Naturally Preserved</h1>
+<p class="text-lg text-gray-600 mb-8">Experience the authentic flavors of nature with our premium organic sun-dried vegetables and spices. Harvested at peak freshness and dried under the natural sun.</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary text-white px-8 py-3 rounded-button font-medium hover:bg-opacity-90 transition-colors whitespace-nowrap">Shop Now</button>
+<button class="border-2 border-primary text-primary px-8 py-3 rounded-button font-medium hover:bg-primary hover:text-white transition-colors whitespace-nowrap">Learn More</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Sundried -->
+<section class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-gray-800 mb-4">Why Choose Sundried</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Our commitment to quality and sustainability sets us apart from conventional dried food producers.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white p-8 rounded shadow-md text-center">
+<div class="w-16 h-16 flex items-center justify-center bg-green-100 rounded-full mx-auto mb-4">
+<i class="ri-leaf-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-2">100% Organic</h3>
+<p class="text-gray-600">All our products are certified organic, grown without harmful pesticides or chemicals.</p>
+</div>
+<div class="bg-white p-8 rounded shadow-md text-center">
+<div class="w-16 h-16 flex items-center justify-center bg-yellow-100 rounded-full mx-auto mb-4">
+<i class="ri-sun-line ri-xl text-secondary"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-2">No Preservatives</h3>
+<p class="text-gray-600">We use only natural sun-drying methods, no artificial preservatives or additives.</p>
+</div>
+<div class="bg-white p-8 rounded shadow-md text-center">
+<div class="w-16 h-16 flex items-center justify-center bg-green-100 rounded-full mx-auto mb-4">
+<i class="ri-user-heart-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-2">Farmer Direct</h3>
+<p class="text-gray-600">We work directly with farmers, ensuring fair prices and sustainable farming practices.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Expertise -->
+<section class="py-16">
+<div class="container mx-auto px-4">
+<div class="flex flex-col md:flex-row items-center gap-12">
+<div class="md:w-1/2">
+<img src="https://readdy.ai/api/search-image?query=A%20beautiful%20arrangement%20of%20various%20colorful%20organic%20spices%20in%20wooden%20bowls%20and%20traditional%20containers.%20The%20spices%20include%20vibrant%20turmeric%2C%20red%20chili%2C%20coriander%2C%20cumin%2C%20and%20other%20aromatic%20herbs.%20The%20scene%20is%20well-lit%20with%20natural%20light%2C%20showing%20the%20rich%20textures%20and%20colors%20of%20each%20spice.%20The%20background%20is%20clean%20and%20minimal.&width=800&height=600&seq=2&orientation=landscape" alt="Spice Collection" class="rounded-lg shadow-lg w-full h-auto object-cover">
+</div>
+<div class="md:w-1/2">
+<h2 class="text-3xl font-bold text-gray-800 mb-4">Our Expertise in Dried Spices</h2>
+<p class="text-gray-600 mb-6">With over 15 years of experience in the art of sun-drying, we've perfected the process of preserving the authentic flavors, aromas, and nutritional benefits of premium organic spices.</p>
+<div class="space-y-4">
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-green-100 rounded-full mr-4 mt-1">
+<i class="ri-check-line ri-lg text-primary"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-800">Traditional Drying Techniques</h4>
+<p class="text-gray-600">We follow age-old methods passed down through generations to ensure optimal flavor retention.</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-green-100 rounded-full mr-4 mt-1">
+<i class="ri-check-line ri-lg text-primary"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-800">Small-Batch Processing</h4>
+<p class="text-gray-600">Each batch is carefully monitored to ensure consistent quality and flavor profiles.</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-green-100 rounded-full mr-4 mt-1">
+<i class="ri-check-line ri-lg text-primary"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-800">Flavor-Sealed Packaging</h4>
+<p class="text-gray-600">Our special packaging preserves freshness and aroma until the moment you open it.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Products -->
+<section class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-gray-800 mb-4">Featured Products</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Discover our most popular sun-dried vegetables and spices, carefully selected for their exceptional quality and flavor.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Product 1 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 product-card">
+<div class="relative">
+<div class="h-64 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Premium%20quality%20sun-dried%20tomatoes%20with%20vibrant%20red%20color%20arranged%20in%20a%20wooden%20bowl.%20The%20tomatoes%20look%20plump%20and%20delicious%20with%20a%20slightly%20wrinkled%20texture%20from%20the%20drying%20process.%20The%20image%20is%20well-lit%20with%20natural%20light%20against%20a%20clean%20white%20background%2C%20showing%20the%20rich%20color%20and%20texture%20of%20the%20tomatoes.&width=500&height=500&seq=3&orientation=squarish" alt="Sun-Dried Tomatoes" class="w-full h-full object-cover object-top">
+</div>
+<span class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm">Best Seller</span>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-center mb-2">
+<h3 class="text-lg font-bold text-gray-800">Sun-Dried Tomatoes</h3>
+<div class="text-right">
+<span class="text-primary font-medium text-xl">₹ 249</span>
+<div class="text-sm text-gray-500">per 250g</div>
+</div>
+</div>
+<p class="text-gray-600 text-sm mb-4">Premium Italian-style sun-dried tomatoes with herbs</p>
+<div class="flex items-center gap-2">
+<div class="flex-1">
+<select class="w-full px-3 py-2 border border-gray-300 rounded-button text-sm" data-product-id="1">
+<option value="250">250g</option>
+<option value="500">500g</option>
+<option value="1000">1kg</option>
+</select>
+</div>
+<button class="flex-1 bg-primary text-white py-2 rounded-button font-medium hover:bg-opacity-90 transition-colors whitespace-nowrap add-to-cart" data-product-id="1">Add to Cart</button>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 product-card">
+<div class="relative">
+<div class="h-64 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Organic%20dried%20red%20chili%20peppers%20arranged%20in%20a%20beautiful%20earthen%20bowl.%20The%20chilies%20have%20a%20deep%20red%20color%20and%20slightly%20wrinkled%20texture%20from%20sun-drying.%20The%20image%20is%20well-lit%20with%20natural%20light%20against%20a%20clean%20white%20background%2C%20showing%20the%20rich%20texture%20and%20vibrant%20color%20of%20the%20chilies.&width=500&height=500&seq=4&orientation=squarish" alt="Dried Red Chillies" class="w-full h-full object-cover object-top">
+</div>
+<span class="absolute top-4 right-4 bg-secondary text-white px-3 py-1 rounded-full text-sm">New</span>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-center mb-2">
+<h3 class="text-lg font-bold text-gray-800">Dried Red Chillies</h3>
+<div class="text-right">
+<span class="text-primary font-medium text-xl">₹ 199</span>
+<div class="text-sm text-gray-500">per 100g</div>
+</div>
+</div>
+<p class="text-gray-600 text-sm mb-4">Spicy Kashmiri red chillies, sun-dried for intense flavor</p>
+<div class="flex items-center gap-2">
+<div class="flex-1">
+<select class="w-full px-3 py-2 border border-gray-300 rounded-button text-sm" data-product-id="2">
+<option value="100">100g</option>
+<option value="250">250g</option>
+<option value="500">500g</option>
+</select>
+</div>
+<button class="flex-1 bg-primary text-white py-2 rounded-button font-medium hover:bg-opacity-90 transition-colors whitespace-nowrap add-to-cart" data-product-id="2">Add to Cart</button>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 product-card">
+<div class="h-64 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Premium%20quality%20dried%20mixed%20herbs%20and%20spices%20including%20rosemary%2C%20thyme%2C%20oregano%2C%20and%20basil%20arranged%20in%20a%20wooden%20bowl.%20The%20herbs%20look%20fresh%20and%20vibrant%20with%20various%20shades%20of%20green.%20The%20image%20is%20well-lit%20with%20natural%20light%20against%20a%20clean%20white%20background%2C%20showing%20the%20rich%20textures%20and%20colors%20of%20the%20herbs.&width=500&height=500&seq=5&orientation=squarish" alt="Mixed Herbs" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<div class="flex justify-between items-center mb-2">
+<h3 class="text-lg font-bold text-gray-800">Mixed Herbs</h3>
+<div class="text-right">
+<span class="text-primary font-medium text-xl">₹ 299</span>
+<div class="text-sm text-gray-500">per 100g</div>
+</div>
+</div>
+<p class="text-gray-600 text-sm mb-4">Blend of rosemary, thyme, oregano, and basil</p>
+<div class="flex items-center gap-2">
+<div class="flex-1">
+<select class="w-full px-3 py-2 border border-gray-300 rounded-button text-sm" data-product-id="3">
+<option value="100">100g</option>
+<option value="250">250g</option>
+<option value="500">500g</option>
+</select>
+</div>
+<button class="flex-1 bg-primary text-white py-2 rounded-button font-medium hover:bg-opacity-90 transition-colors whitespace-nowrap add-to-cart" data-product-id="3">Add to Cart</button>
+</div>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 product-card">
+<div class="h-64 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Premium%20quality%20sun-dried%20mushrooms%20arranged%20in%20a%20wooden%20bowl.%20The%20mushrooms%20have%20a%20rich%20brown%20color%20and%20unique%20wrinkled%20texture%20from%20the%20drying%20process.%20The%20image%20is%20well-lit%20with%20natural%20light%20against%20a%20clean%20white%20background%2C%20showing%20the%20earthy%20tones%20and%20interesting%20textures%20of%20the%20dried%20mushrooms.&width=500&height=500&seq=6&orientation=squarish" alt="Dried Mushrooms" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<div class="flex justify-between items-center mb-2">
+<h3 class="text-lg font-bold text-gray-800">Dried Mushrooms</h3>
+<div class="text-right">
+<span class="text-primary font-medium text-xl">₹ 349</span>
+<div class="text-sm text-gray-500">per 100g</div>
+</div>
+</div>
+<p class="text-gray-600 text-sm mb-4">Premium shiitake and porcini mushroom mix</p>
+<div class="flex items-center gap-2">
+<div class="flex-1">
+<select class="w-full px-3 py-2 border border-gray-300 rounded-button text-sm" data-product-id="4">
+<option value="100">100g</option>
+<option value="250">250g</option>
+<option value="500">500g</option>
+</select>
+</div>
+<button class="flex-1 bg-primary text-white py-2 rounded-button font-medium hover:bg-opacity-90 transition-colors whitespace-nowrap add-to-cart" data-product-id="4">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center mt-10">
+<a href="#" class="inline-block border-2 border-primary text-primary px-8 py-3 rounded-button font-medium hover:bg-primary hover:text-white transition-colors whitespace-nowrap">View All Products</a>
+</div>
+</div>
+</section>
+<!-- Best Sellers -->
+<section class="py-16">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-gray-800 mb-4">Best Sellers</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Our customers' favorite picks that have stood the test of time.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Product 1 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 product-card">
+<div class="relative">
+<div class="h-64 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Premium%20quality%20dried%20ginger%20powder%20in%20a%20rustic%20wooden%20bowl.%20The%20ginger%20powder%20has%20a%20rich%20golden%20color%20and%20fine%20texture.%20The%20image%20is%20well-lit%20with%20natural%20light%20against%20a%20clean%20white%20background%2C%20showing%20the%20aromatic%20spices%20warm%20tones.&width=500&height=500&seq=16&orientation=squarish" alt="Dried Ginger Powder" class="w-full h-full object-cover object-top">
+</div>
+<span class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm">Popular</span>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-center mb-2">
+<h3 class="text-lg font-bold text-gray-800">Dried Ginger Powder</h3>
+<div class="text-right">
+<span class="text-primary font-medium text-xl">₹ 199</span>
+<div class="text-sm text-gray-500">per 100g</div>
+</div>
+</div>
+<p class="text-gray-600 text-sm mb-4">Premium quality dried ginger powder with intense aroma</p>
+<div class="flex items-center gap-2">
+<div class="flex-1">
+<select class="w-full px-3 py-2 border border-gray-300 rounded-button text-sm" data-product-id="5">
+<option value="100">100g</option>
+<option value="250">250g</option>
+<option value="500">500g</option>
+</select>
+</div>
+<button class="flex-1 bg-primary text-white py-2 rounded-button font-medium hover:bg-opacity-90 transition-colors whitespace-nowrap add-to-cart" data-product-id="5">Add to Cart</button>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 product-card">
+<div class="relative">
+<div class="h-64 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Organic%20dried%20bay%20leaves%20arranged%20beautifully%20in%20a%20ceramic%20bowl.%20The%20leaves%20are%20whole%20and%20have%20a%20deep%20green%20color.%20The%20image%20is%20well-lit%20with%20natural%20light%20against%20a%20clean%20white%20background%2C%20showing%20the%20texture%20and%20quality%20of%20the%20dried%20herbs.&width=500&height=500&seq=17&orientation=squarish" alt="Bay Leaves" class="w-full h-full object-cover object-top">
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-center mb-2">
+<h3 class="text-lg font-bold text-gray-800">Bay Leaves</h3>
+<div class="text-right">
+<span class="text-primary font-medium text-xl">₹ 149</span>
+<div class="text-sm text-gray-500">per 50g</div>
+</div>
+</div>
+<p class="text-gray-600 text-sm mb-4">Aromatic whole bay leaves for perfect seasoning</p>
+<div class="flex items-center gap-2">
+<div class="flex-1">
+<select class="w-full px-3 py-2 border border-gray-300 rounded-button text-sm" data-product-id="6">
+<option value="50">50g</option>
+<option value="100">100g</option>
+<option value="250">250g</option>
+</select>
+</div>
+<button class="flex-1 bg-primary text-white py-2 rounded-button font-medium hover:bg-opacity-90 transition-colors whitespace-nowrap add-to-cart" data-product-id="6">Add to Cart</button>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 product-card">
+<div class="relative">
+<div class="h-64 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Sun-dried%20organic%20garlic%20flakes%20in%20a%20rustic%20wooden%20bowl.%20The%20garlic%20flakes%20are%20crispy%20and%20have%20a%20light%20golden%20color.%20The%20image%20is%20well-lit%20with%20natural%20light%20against%20a%20clean%20white%20background%2C%20showing%20the%20texture%20and%20quality%20of%20the%20dried%20garlic.&width=500&height=500&seq=18&orientation=squarish" alt="Garlic Flakes" class="w-full h-full object-cover object-top">
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-center mb-2">
+<h3 class="text-lg font-bold text-gray-800">Garlic Flakes</h3>
+<div class="text-right">
+<span class="text-primary font-medium text-xl">₹ 279</span>
+<div class="text-sm text-gray-500">per 100g</div>
+</div>
+</div>
+<p class="text-gray-600 text-sm mb-4">Crispy dried garlic flakes for instant flavor</p>
+<div class="flex items-center gap-2">
+<div class="flex-1">
+<select class="w-full px-3 py-2 border border-gray-300 rounded-button text-sm" data-product-id="7">
+<option value="100">100g</option>
+<option value="250">250g</option>
+<option value="500">500g</option>
+</select>
+</div>
+<button class="flex-1 bg-primary text-white py-2 rounded-button font-medium hover:bg-opacity-90 transition-colors whitespace-nowrap add-to-cart" data-product-id="7">Add to Cart</button>
+</div>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 product-card">
+<div class="relative">
+<div class="h-64 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Organic%20dried%20mint%20leaves%20in%20a%20beautiful%20glass%20jar.%20The%20mint%20leaves%20are%20bright%20green%20and%20perfectly%20dried.%20The%20image%20is%20well-lit%20with%20natural%20light%20against%20a%20clean%20white%20background%2C%20showing%20the%20freshness%20and%20quality%20of%20the%20dried%20herbs.&width=500&height=500&seq=19&orientation=squarish" alt="Dried Mint" class="w-full h-full object-cover object-top">
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-center mb-2">
+<h3 class="text-lg font-bold text-gray-800">Dried Mint</h3>
+<div class="text-right">
+<span class="text-primary font-medium text-xl">₹ 169</span>
+<div class="text-sm text-gray-500">per 50g</div>
+</div>
+</div>
+<p class="text-gray-600 text-sm mb-4">Fresh dried mint leaves for tea and cooking</p>
+<div class="flex items-center gap-2">
+<div class="flex-1">
+<select class="w-full px-3 py-2 border border-gray-300 rounded-button text-sm" data-product-id="8">
+<option value="50">50g</option>
+<option value="100">100g</option>
+<option value="250">250g</option>
+</select>
+</div>
+<button class="flex-1 bg-primary text-white py-2 rounded-button font-medium hover:bg-opacity-90 transition-colors whitespace-nowrap add-to-cart" data-product-id="8">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- New Arrivals -->
+<section class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-gray-800 mb-4">New Arrivals</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Explore our latest additions to the Sundried family.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Product 1 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 product-card">
+<div class="relative">
+<div class="h-64 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Sun-dried%20organic%20bell%20peppers%20in%20vibrant%20colors%20arranged%20in%20a%20modern%20white%20bowl.%20The%20peppers%20are%20cut%20into%20strips%20and%20have%20intense%20red%2C%20yellow%2C%20and%20orange%20colors.%20The%20image%20is%20well-lit%20with%20natural%20light%20against%20a%20clean%20white%20background.&width=500&height=500&seq=20&orientation=squarish" alt="Mixed Bell Peppers" class="w-full h-full object-cover object-top">
+</div>
+<span class="absolute top-4 right-4 bg-secondary text-white px-3 py-1 rounded-full text-sm">New</span>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-center mb-2">
+<h3 class="text-lg font-bold text-gray-800">Mixed Bell Peppers</h3>
+<div class="text-right">
+<span class="text-primary font-medium text-xl">₹ 299</span>
+<div class="text-sm text-gray-500">per 100g</div>
+</div>
+</div>
+<p class="text-gray-600 text-sm mb-4">Colorful mix of sun-dried bell peppers</p>
+<div class="flex items-center gap-2">
+<div class="flex-1">
+<select class="w-full px-3 py-2 border border-gray-300 rounded-button text-sm" data-product-id="9">
+<option value="100">100g</option>
+<option value="250">250g</option>
+<option value="500">500g</option>
+</select>
+</div>
+<button class="flex-1 bg-primary text-white py-2 rounded-button font-medium hover:bg-opacity-90 transition-colors whitespace-nowrap add-to-cart" data-product-id="9">Add to Cart</button>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 product-card">
+<div class="relative">
+<div class="h-64 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Dried%20organic%20curry%20leaves%20arranged%20in%20a%20traditional%20brass%20bowl.%20The%20curry%20leaves%20are%20deep%20green%20and%20perfectly%20dried.%20The%20image%20is%20well-lit%20with%20natural%20light%20against%20a%20clean%20white%20background%2C%20showing%20the%20authentic%20Indian%20spice.&width=500&height=500&seq=21&orientation=squarish" alt="Curry Leaves" class="w-full h-full object-cover object-top">
+</div>
+<span class="absolute top-4 right-4 bg-secondary text-white px-3 py-1 rounded-full text-sm">New</span>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-center mb-2">
+<h3 class="text-lg font-bold text-gray-800">Curry Leaves</h3>
+<div class="text-right">
+<span class="text-primary font-medium text-xl">₹ 129</span>
+<div class="text-sm text-gray-500">per 50g</div>
+</div>
+</div>
+<p class="text-gray-600 text-sm mb-4">Authentic dried curry leaves for Indian cuisine</p>
+<div class="flex items-center gap-2">
+<div class="flex-1">
+<select class="w-full px-3 py-2 border border-gray-300 rounded-button text-sm" data-product-id="10">
+<option value="50">50g</option>
+<option value="100">100g</option>
+<option value="250">250g</option>
+</select>
+</div>
+<button class="flex-1 bg-primary text-white py-2 rounded-button font-medium hover:bg-opacity-90 transition-colors whitespace-nowrap add-to-cart" data-product-id="10">Add to Cart</button>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 product-card">
+<div class="relative">
+<div class="h-64 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Sun-dried%20organic%20zucchini%20chips%20arranged%20in%20a%20modern%20ceramic%20bowl.%20The%20zucchini%20chips%20are%20thinly%20sliced%20and%20have%20a%20light%20green%20color.%20The%20image%20is%20well-lit%20with%20natural%20light%20against%20a%20clean%20white%20background%2C%20showing%20the%20crispy%20texture.&width=500&height=500&seq=22&orientation=squarish" alt="Zucchini Chips" class="w-full h-full object-cover object-top">
+</div>
+<span class="absolute top-4 right-4 bg-secondary text-white px-3 py-1 rounded-full text-sm">New</span>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-center mb-2">
+<h3 class="text-lg font-bold text-gray-800">Zucchini Chips</h3>
+<div class="text-right">
+<span class="text-primary font-medium text-xl">₹ 259</span>
+<div class="text-sm text-gray-500">per 100g</div>
+</div>
+</div>
+<p class="text-gray-600 text-sm mb-4">Crispy sun-dried zucchini chips</p>
+<div class="flex items-center gap-2">
+<div class="flex-1">
+<select class="w-full px-3 py-2 border border-gray-300 rounded-button text-sm" data-product-id="11">
+<option value="100">100g</option>
+<option value="250">250g</option>
+<option value="500">500g</option>
+</select>
+</div>
+<button class="flex-1 bg-primary text-white py-2 rounded-button font-medium hover:bg-opacity-90 transition-colors whitespace-nowrap add-to-cart" data-product-id="11">Add to Cart</button>
+</div>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 product-card">
+<div class="relative">
+<div class="h-64 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Dried%20organic%20lemongrass%20stalks%20bundled%20together%20in%20a%20rustic%20setting.%20The%20lemongrass%20has%20a%20pale%20yellow%20color%20and%20is%20perfectly%20dried.%20The%20image%20is%20well-lit%20with%20natural%20light%20against%20a%20clean%20white%20background%2C%20showing%20the%20aromatic%20herbs%20texture.&width=500&height=500&seq=23&orientation=squarish" alt="Lemongrass" class="w-full h-full object-cover object-top">
+</div>
+<span class="absolute top-4 right-4 bg-secondary text-white px-3 py-1 rounded-full text-sm">New</span>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-center mb-2">
+<h3 class="text-lg font-bold text-gray-800">Lemongrass</h3>
+<div class="text-right">
+<span class="text-primary font-medium text-xl">₹ 189</span>
+<div class="text-sm text-gray-500">per 50g</div>
+</div>
+</div>
+<p class="text-gray-600 text-sm mb-4">Aromatic dried lemongrass for Thai cuisine</p>
+<div class="flex items-center gap-2">
+<div class="flex-1">
+<select class="w-full px-3 py-2 border border-gray-300 rounded-button text-sm" data-product-id="12">
+<option value="50">50g</option>
+<option value="100">100g</option>
+<option value="250">250g</option>
+</select>
+</div>
+<button class="flex-1 bg-primary text-white py-2 rounded-button font-medium hover:bg-opacity-90 transition-colors whitespace-nowrap add-to-cart" data-product-id="12">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Special Offers -->
+<section class="py-16">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-gray-800 mb-4">Special Offers</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Limited time deals on our premium products.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Product 1 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 product-card">
+<div class="relative">
+<div class="h-64 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Premium%20quality%20dried%20rosemary%20sprigs%20arranged%20in%20a%20vintage%20glass%20jar.%20The%20rosemary%20has%20a%20deep%20green%20color%20and%20is%20perfectly%20dried.%20The%20image%20is%20well-lit%20with%20natural%20light%20against%20a%20clean%20white%20background%2C%20showing%20the%20herbs%20needle-like%20leaves.&width=500&height=500&seq=24&orientation=squarish" alt="Dried Rosemary" class="w-full h-full object-cover object-top">
+</div>
+<span class="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm">30% Off</span>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-center mb-2">
+<h3 class="text-lg font-bold text-gray-800">Dried Rosemary</h3>
+<div class="text-right">
+<span class="text-gray-400 line-through text-sm">₹ 299</span>
+<span class="text-primary font-medium text-xl ml-2">₹ 209</span>
+<div class="text-sm text-gray-500">per 100g</div>
+</div>
+</div>
+<p class="text-gray-600 text-sm mb-4">Premium dried rosemary sprigs</p>
+<div class="flex items-center gap-2">
+<div class="flex-1">
+<select class="w-full px-3 py-2 border border-gray-300 rounded-button text-sm" data-product-id="13">
+<option value="100">100g</option>
+<option value="250">250g</option>
+<option value="500">500g</option>
+</select>
+</div>
+<button class="flex-1 bg-primary text-white py-2 rounded-button font-medium hover:bg-opacity-90 transition-colors whitespace-nowrap add-to-cart" data-product-id="13">Add to Cart</button>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 product-card">
+<div class="relative">
+<div class="h-64 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Sun-dried%20organic%20mango%20slices%20arranged%20in%20a%20modern%20white%20bowl.%20The%20mango%20slices%20have%20a%20vibrant%20orange%20color%20and%20look%20chewy.%20The%20image%20is%20well-lit%20with%20natural%20light%20against%20a%20clean%20white%20background%2C%20showing%20the%20natural%20sweetness%20of%20the%20fruit.&width=500&height=500&seq=25&orientation=squarish" alt="Dried Mango" class="w-full h-full object-cover object-top">
+</div>
+<span class="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm">25% Off</span>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-center mb-2">
+<h3 class="text-lg font-bold text-gray-800">Dried Mango</h3>
+<div class="text-right">
+<span class="text-gray-400 line-through text-sm">₹ 399</span>
+<span class="text-primary font-medium text-xl ml-2">₹ 299</span>
+<div class="text-sm text-gray-500">per 250g</div>
+</div>
+</div>
+<p class="text-gray-600 text-sm mb-4">Sweet and tangy dried mango slices</p>
+<div class="flex items-center gap-2">
+<div class="flex-1">
+<select class="w-full px-3 py-2 border border-gray-300 rounded-button text-sm" data-product-id="14">
+<option value="250">250g</option>
+<option value="500">500g</option>
+<option value="1000">1kg</option>
+</select>
+</div>
+<button class="flex-1 bg-primary text-white py-2 rounded-button font-medium hover:bg-opacity-90 transition-colors whitespace-nowrap add-to-cart" data-product-id="14">Add to Cart</button>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 product-card">
+<div class="relative">
+<div class="h-64 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Dried%20organic%20basil%20leaves%20in%20a%20beautiful%20glass%20container.%20The%20basil%20leaves%20are%20deep%20green%20and%20perfectly%20dried.%20The%20image%20is%20well-lit%20with%20natural%20light%20against%20a%20clean%20white%20background%2C%20showing%20the%20herbs%20delicate%20texture.&width=500&height=500&seq=26&orientation=squarish" alt="Dried Basil" class="w-full h-full object-cover object-top">
+</div>
+<span class="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm">20% Off</span>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-center mb-2">
+<h3 class="text-lg font-bold text-gray-800">Dried Basil</h3>
+<div class="text-right">
+<span class="text-gray-400 line-through text-sm">₹ 249</span>
+<span class="text-primary font-medium text-xl ml-2">₹ 199</span>
+<div class="text-sm text-gray-500">per 100g</div>
+</div>
+</div>
+<p class="text-gray-600 text-sm mb-4">Premium dried basil leaves</p>
+<div class="flex items-center gap-2">
+<div class="flex-1">
+<select class="w-full px-3 py-2 border border-gray-300 rounded-button text-sm" data-product-id="15">
+<option value="100">100g</option>
+<option value="250">250g</option>
+<option value="500">500g</option>
+</select>
+</div>
+<button class="flex-1 bg-primary text-white py-2 rounded-button font-medium hover:bg-opacity-90 transition-colors whitespace-nowrap add-to-cart" data-product-id="15">Add to Cart</button>
+</div>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 product-card">
+<div class="relative">
+<div class="h-64 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Sun-dried%20organic%20apple%20rings%20arranged%20in%20a%20rustic%20wooden%20bowl.%20The%20apple%20rings%20have%20a%20golden%20color%20and%20look%20perfectly%20chewy.%20The%20image%20is%20well-lit%20with%20natural%20light%20against%20a%20clean%20white%20background%2C%20showing%20the%20natural%20sweetness%20of%20the%20fruit.&width=500&height=500&seq=27&orientation=squarish" alt="Apple Rings" class="w-full h-full object-cover object-top">
+</div>
+<span class="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm">15% Off</span>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-center mb-2">
+<h3 class="text-lg font-bold text-gray-800">Apple Rings</h3>
+<div class="text-right">
+<span class="text-gray-400 line-through text-sm">₹ 349</span>
+<span class="text-primary font-medium text-xl ml-2">₹ 297</span>
+<div class="text-sm text-gray-500">per 250g</div>
+</div>
+</div>
+<p class="text-gray-600 text-sm mb-4">Sweet and chewy dried apple rings</p>
+<div class="flex items-center gap-2">
+<div class="flex-1">
+<select class="w-full px-3 py-2 border border-gray-300 rounded-button text-sm" data-product-id="16">
+<option value="250">250g</option>
+<option value="500">500g</option>
+<option value="1000">1kg</option>
+</select>
+</div>
+<button class="flex-1 bg-primary text-white py-2 rounded-button font-medium hover:bg-opacity-90 transition-colors whitespace-nowrap add-to-cart" data-product-id="16">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Vision & Mission -->
+<section class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-gray-800 mb-4">Our Vision & Mission</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Preserving tradition, embracing sustainability, and delivering excellence in every product.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-white p-8 rounded-lg shadow-md">
+<div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6">
+<i class="ri-eye-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-800 mb-4">Our Vision</h3>
+<p class="text-gray-600 mb-6">To become the global leader in traditional sun-dried products while promoting sustainable agriculture and preserving ancient food preservation techniques.</p>
+<ul class="space-y-3">
+<li class="flex items-start">
+<i class="ri-check-line text-primary mt-1 mr-2"></i>
+<span class="text-gray-600">Create a sustainable ecosystem for farmers</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-primary mt-1 mr-2"></i>
+<span class="text-gray-600">Promote healthy, chemical-free food alternatives</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-primary mt-1 mr-2"></i>
+<span class="text-gray-600">Preserve traditional food processing methods</span>
+</li>
+</ul>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-md">
+<div class="w-16 h-16 flex items-center justify-center bg-secondary bg-opacity-10 rounded-full mb-6">
+<i class="ri-flag-line ri-xl text-secondary"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-800 mb-4">Our Mission</h3>
+<p class="text-gray-600 mb-6">To deliver premium quality sun-dried products while supporting local farmers and promoting sustainable agriculture practices.</p>
+<ul class="space-y-3">
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mt-1 mr-2"></i>
+<span class="text-gray-600">Ensure fair trade practices with farmers</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mt-1 mr-2"></i>
+<span class="text-gray-600">Maintain highest quality standards</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-secondary mt-1 mr-2"></i>
+<span class="text-gray-600">Reduce carbon footprint in food processing</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Sundried -->
+<section class="py-16">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-gray-800 mb-4">Why Choose Sundried?</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Experience the difference of traditional sun-drying methods combined with modern quality standards.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white p-8 rounded-lg shadow-md text-center">
+<div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mx-auto mb-6">
+<i class="ri-sun-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-4">Natural Preservation</h3>
+<p class="text-gray-600">Our sun-drying process preserves nutrients and flavors naturally, without any artificial preservatives.</p>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-md text-center">
+<div class="w-16 h-16 flex items-center justify-center bg-secondary bg-opacity-10 rounded-full mx-auto mb-6">
+<i class="ri-shield-check-line ri-xl text-secondary"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-4">Quality Assurance</h3>
+<p class="text-gray-600">Every batch undergoes strict quality control measures to ensure premium quality and food safety.</p>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-md text-center">
+<div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mx-auto mb-6">
+<i class="ri-recycle-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-4">Eco-Friendly</h3>
+<p class="text-gray-600">Our process uses renewable solar energy and sustainable packaging to minimize environmental impact.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery -->
+<section class="py-16">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-gray-800 mb-4">Our Process</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Take a glimpse into our world of traditional sun-drying and organic farming practices.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="overflow-hidden rounded-lg shadow-md h-64">
+<img src="https://readdy.ai/api/search-image?query=A%20farmer%20harvesting%20organic%20vegetables%20in%20a%20lush%20green%20farm.%20The%20farmer%20is%20wearing%20traditional%20clothing%20and%20carefully%20picking%20fresh%20produce.%20The%20scene%20shows%20sustainable%20farming%20practices%20with%20beautiful%20rows%20of%20vegetables%20under%20natural%20sunlight.%20The%20image%20has%20warm%20earthy%20tones%20and%20shows%20the%20connection%20between%20farmer%20and%20land.&width=600&height=400&seq=7&orientation=landscape" alt="Organic Farming" class="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-110">
+</div>
+<div class="overflow-hidden rounded-lg shadow-md h-64">
+<img src="https://readdy.ai/api/search-image?query=Traditional%20sun-drying%20process%20of%20vegetables%20and%20spices%20on%20large%20wooden%20racks.%20Various%20colorful%20vegetables%20are%20laid%20out%20in%20rows%20under%20bright%20sunlight.%20Workers%20are%20carefully%20arranging%20and%20monitoring%20the%20drying%20process.%20The%20scene%20shows%20the%20natural%20preservation%20method%20with%20beautiful%20contrast%20between%20the%20colorful%20produce%20and%20wooden%20drying%20racks.&width=600&height=400&seq=8&orientation=landscape" alt="Sun-Drying Process" class="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-110">
+</div>
+<div class="overflow-hidden rounded-lg shadow-md h-64">
+<img src="https://readdy.ai/api/search-image?query=Close-up%20of%20hands%20sorting%20and%20selecting%20premium%20quality%20dried%20spices.%20The%20hands%20are%20carefully%20examining%20and%20sorting%20different%20colored%20spices%20on%20a%20wooden%20table.%20The%20scene%20shows%20the%20attention%20to%20detail%20and%20quality%20control%20in%20the%20spice%20selection%20process.%20The%20image%20has%20warm%2C%20rich%20tones%20highlighting%20the%20textures%20and%20colors%20of%20the%20various%20spices.&width=600&height=400&seq=9&orientation=landscape" alt="Quality Selection" class="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-110">
+</div>
+<div class="overflow-hidden rounded-lg shadow-md h-64">
+<img src="https://readdy.ai/api/search-image?query=Workers%20packaging%20dried%20vegetables%20and%20spices%20in%20eco-friendly%20packaging.%20The%20scene%20shows%20a%20clean%20workspace%20with%20people%20carefully%20weighing%20and%20sealing%20packages%20of%20colorful%20dried%20products.%20The%20packaging%20is%20made%20of%20sustainable%20materials%20with%20natural%20earth%20tones.%20The%20image%20shows%20the%20final%20stage%20of%20production%20with%20attention%20to%20detail%20and%20hygiene.&width=600&height=400&seq=10&orientation=landscape" alt="Packaging" class="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-110">
+</div>
+<div class="overflow-hidden rounded-lg shadow-md h-64">
+<img src="https://readdy.ai/api/search-image?query=A%20beautiful%20organic%20farm%20with%20rows%20of%20vegetables%20growing%20under%20the%20sun.%20The%20scene%20shows%20sustainable%20farming%20practices%20with%20natural%20pest%20control%20methods%20and%20irrigation%20systems.%20Mountains%20can%20be%20seen%20in%20the%20background%20with%20a%20clear%20blue%20sky.%20The%20image%20has%20vibrant%20colors%20showing%20the%20health%20and%20vitality%20of%20the%20organic%20crops.&width=600&height=400&seq=11&orientation=landscape" alt="Organic Farm" class="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-110">
+</div>
+<div class="overflow-hidden rounded-lg shadow-md h-64">
+<img src="https://readdy.ai/api/search-image?query=A%20chef%20using%20Sundried%20products%20in%20a%20modern%20kitchen.%20The%20chef%20is%20adding%20sun-dried%20tomatoes%20and%20herbs%20to%20a%20gourmet%20dish.%20The%20kitchen%20is%20well-lit%20with%20natural%20light%20and%20has%20wooden%20elements.%20The%20image%20shows%20the%20culinary%20application%20of%20the%20dried%20products%20with%20steam%20rising%20from%20the%20cooking%20pot%20and%20vibrant%20colors%20of%20the%20ingredients.&width=600&height=400&seq=12&orientation=landscape" alt="Culinary Use" class="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-110">
+</div>
+</div>
+</div>
+</section>
+<!-- Meet Our Founder -->
+<section class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="flex flex-col md:flex-row items-center gap-12">
+<div class="md:w-1/3">
+<img src="https://readdy.ai/api/search-image?query=Portrait%20of%20a%20middle-aged%20Indian%20woman%20with%20a%20warm%20smile%20standing%20in%20an%20organic%20farm.%20She%20is%20wearing%20casual%20but%20professional%20attire%20with%20earth%20tones.%20The%20background%20shows%20sun-drying%20racks%20with%20vegetables.%20The%20lighting%20is%20natural%20and%20flattering%2C%20showing%20her%20confidence%20and%20connection%20to%20the%20land.%20The%20image%20conveys%20trust%2C%20expertise%2C%20and%20passion%20for%20organic%20farming.&width=500&height=600&seq=13&orientation=portrait" alt="Founder" class="rounded-lg shadow-lg w-full h-auto object-cover">
+</div>
+<div class="md:w-2/3">
+<h2 class="text-3xl font-bold text-gray-800 mb-4">Meet Our Founder</h2>
+<h3 class="text-xl text-primary font-medium mb-4">Priya Sharma</h3>
+<p class="text-gray-600 mb-6">With a deep passion for preserving traditional food techniques and promoting sustainable agriculture, Priya founded Sundried in 2010 after leaving her corporate career. Growing up in a farming family in rural Maharashtra, she witnessed firsthand the decline of traditional preservation methods and the rise of chemical preservatives.</p>
+<p class="text-gray-600 mb-6">Determined to revive these ancient practices, Priya began working with local farmers to create sun-dried products that maintained both nutritional value and authentic flavors. What started as a small operation with five farmers has now grown into a community of over 200 organic farmers across India.</p>
+<p class="text-gray-600">"Our mission goes beyond creating delicious products. We're preserving cultural heritage, supporting sustainable farming, and bringing the purest flavors of nature to your table." - Priya Sharma</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter -->
+<section class="py-16 bg-primary bg-opacity-10">
+<div class="container mx-auto px-4">
+<div class="max-w-xl mx-auto text-center">
+<h2 class="text-3xl font-bold text-gray-800 mb-4">Join Our Community</h2>
+<p class="text-gray-600 mb-8">Subscribe to our newsletter for seasonal recipes, special offers, and updates on new products.</p>
+<form class="flex flex-col sm:flex-row gap-4">
+<input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-button border border-gray-300 focus:outline-none focus:border-primary">
+<button type="submit" class="bg-primary text-white px-6 py-3 rounded-button font-medium hover:bg-opacity-90 transition-colors whitespace-nowrap">Subscribe</button>
+</form>
+<p class="text-sm text-gray-500 mt-4">By subscribing, you agree to receive marketing emails from Sundried. You can unsubscribe at any time.</p>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-800 text-white pt-16 pb-8">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+<div>
+<div class="flex items-center gap-2 mb-6">
+<span class="text-xl font-['Pacifico']">Sundried</span>
+<img src="https://static.readdy.ai/image/7009b1f5ead32cc1f6e73aca2d7cc4dc/1bac46e9397671bf9e39f1c81b496461.png" alt="Sundried Logo" class="h-6">
+</div>
+<p class="text-gray-400 mb-6">Premium organic sun-dried vegetables and spices, harvested at peak freshness and preserved naturally.</p>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-700 rounded-full hover:bg-primary transition-colors">
+<i class="ri-facebook-fill ri-lg"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-700 rounded-full hover:bg-primary transition-colors">
+<i class="ri-instagram-line ri-lg"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-700 rounded-full hover:bg-primary transition-colors">
+<i class="ri-twitter-x-line ri-lg"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-700 rounded-full hover:bg-primary transition-colors">
+<i class="ri-pinterest-line ri-lg"></i>
+</a>
+</div>
+</div>
+<div>
+<h4 class="text-lg font-medium mb-6">Quick Links</h4>
+<ul class="space-y-3">
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Products</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Reviews</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-medium mb-6">Customer Service</h4>
+<ul class="space-y-3">
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">FAQs</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Shipping Policy</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Return Policy</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Terms & Conditions</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-medium mb-6">Contact Us</h4>
+<ul class="space-y-3">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mr-3 mt-1">
+<i class="ri-map-pin-line"></i>
+</div>
+<span class="text-gray-400">123 Organic Way, Mumbai, Maharashtra 400001, India</span>
+</li>
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-3">
+<i class="ri-phone-line"></i>
+</div>
+<a href="tel:+919876543210" class="text-gray-400 hover:text-white transition-colors">+91 98765 43210</a>
+</li>
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-3">
+<i class="ri-mail-line"></i>
+</div>
+<a href="mailto:info@sundried.com" class="text-gray-400 hover:text-white transition-colors">info@sundried.com</a>
+</li>
+</ul>
+<div class="mt-6">
+<h4 class="text-lg font-medium mb-4">We Accept</h4>
+<div class="flex space-x-3">
+<div class="w-10 h-10 flex items-center justify-center bg-gray-700 rounded">
+<i class="ri-visa-line ri-lg"></i>
+</div>
+<div class="w-10 h-10 flex items-center justify-center bg-gray-700 rounded">
+<i class="ri-mastercard-line ri-lg"></i>
+</div>
+<div class="w-10 h-10 flex items-center justify-center bg-gray-700 rounded">
+<i class="ri-paypal-line ri-lg"></i>
+</div>
+<div class="w-10 h-10 flex items-center justify-center bg-gray-700 rounded">
+<i class="ri-amazon-pay-line ri-lg"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-700 pt-8">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 Sundried. All rights reserved.</p>
+<div class="flex items-center">
+<img src="https://readdy.ai/api/search-image?query=Simple%20organic%20certification%20logo%20with%20a%20green%20leaf%20symbol%20and%20text.%20The%20logo%20is%20clean%20and%20professional%20looking%20with%20a%20white%20background.%20The%20design%20is%20minimal%20and%20modern%2C%20suitable%20for%20a%20food%20product%20certification.&width=100&height=40&seq=14&orientation=landscape" alt="Organic Certified" class="h-10 mr-4">
+<img src="https://readdy.ai/api/search-image?query=Simple%20food%20safety%20certification%20logo%20with%20a%20checkmark%20or%20shield%20symbol.%20The%20logo%20is%20clean%20and%20professional%20looking%20with%20a%20white%20background.%20The%20design%20is%20minimal%20and%20modern%2C%20suitable%20for%20a%20food%20safety%20certification.&width=100&height=40&seq=15&orientation=landscape" alt="Food Safety Certified" class="h-10">
+</div>
+</div>
+</div>
+</div>
+</footer>
+<!-- WhatsApp Support Button -->
+<div class="fixed bottom-6 right-6 z-50">
+<a href="https://wa.me/919876543210" class="w-14 h-14 flex items-center justify-center bg-green-500 rounded-full shadow-lg hover:bg-green-600 transition-colors">
+<i class="ri-whatsapp-line ri-xl text-white"></i>
+</a>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+// Mobile menu toggle
+const menuButton = document.querySelector('.ri-menu-line').parentElement;
+const nav = document.querySelector('nav');
+menuButton.addEventListener('click', function() {
+if (nav.classList.contains('hidden')) {
+nav.classList.remove('hidden');
+nav.classList.add('flex', 'flex-col', 'absolute', 'top-16', 'left-0', 'right-0', 'bg-white', 'shadow-md', 'p-4', 'space-y-4', 'z-50');
+} else {
+nav.classList.add('hidden');
+nav.classList.remove('flex', 'flex-col', 'absolute', 'top-16', 'left-0', 'right-0', 'bg-white', 'shadow-md', 'p-4', 'space-y-4', 'z-50');
+}
+});
+// Product card hover effect
+const productCards = document.querySelectorAll('.product-card');
+productCards.forEach(card => {
+card.addEventListener('mouseenter', function() {
+this.classList.add('shadow-xl');
+});
+card.addEventListener('mouseleave', function() {
+this.classList.remove('shadow-xl');
+});
+});
+// Shopping cart functionality
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
+const cartCount = document.querySelector('.ri-shopping-cart-2-line').nextElementSibling;
+function updateCartCount() {
+cartCount.textContent = cart.reduce((total, item) => total + item.quantity, 0);
+}
+function showNotification(message) {
+const notification = document.createElement('div');
+notification.className = 'fixed top-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg z-50 transform transition-transform duration-300 translate-y-0';
+notification.textContent = message;
+document.body.appendChild(notification);
+setTimeout(() => {
+notification.classList.add('translate-y-[-120%]');
+setTimeout(() => notification.remove(), 300);
+}, 2000);
+}
+// Add to cart functionality
+document.querySelectorAll('.add-to-cart').forEach(button => {
+button.addEventListener('click', function() {
+const productId = this.dataset.productId;
+const productCard = this.closest('.product-card');
+const productName = productCard.querySelector('h3').textContent;
+const price = parseInt(productCard.querySelector('.text-primary').textContent.replace(/[^0-9]/g, ''));
+const weight = productCard.querySelector('select').value;
+const image = productCard.querySelector('img').src;
+const existingItem = cart.find(item => item.id === productId && item.weight === weight);
+if (existingItem) {
+existingItem.quantity += 1;
+} else {
+cart.push({
+id: productId,
+name: productName,
+price: price,
+weight: weight,
+quantity: 1,
+image: image
+});
+}
+localStorage.setItem('cart', JSON.stringify(cart));
+updateCartCount();
+showNotification('Product added to cart!');
+});
+});
+// Initialize cart count
+updateCartCount();
+// Cart icon click handler
+document.querySelector('.ri-shopping-cart-2-line').parentElement.addEventListener('click', function() {
+window.location.href = '/checkout.html';
+});
+});
+</script>
+<!-- Payment Modal -->
+<div id="paymentModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+<div class="bg-white rounded-lg p-8 max-w-md w-full mx-4">
+<div class="flex justify-between items-center mb-6">
+<h3 class="text-xl font-bold text-gray-800">Secure Payment</h3>
+<button class="text-gray-500 hover:text-gray-700" onclick="closePaymentModal()">
+<i class="ri-close-line ri-lg"></i>
+</button>
+</div>
+<div class="space-y-4">
+<div class="flex items-center justify-between p-3 border rounded-lg cursor-pointer payment-option" data-method="card">
+<div class="flex items-center">
+<i class="ri-bank-card-line ri-lg text-primary mr-3"></i>
+<span>Credit/Debit Card</span>
+</div>
+<i class="ri-arrow-right-s-line"></i>
+</div>
+<div class="flex items-center justify-between p-3 border rounded-lg cursor-pointer payment-option" data-method="upi">
+<div class="flex items-center">
+<i class="ri-secure-payment-line ri-lg text-primary mr-3"></i>
+<span>UPI Payment</span>
+</div>
+<i class="ri-arrow-right-s-line"></i>
+</div>
+<div class="flex items-center justify-between p-3 border rounded-lg cursor-pointer payment-option" data-method="netbanking">
+<div class="flex items-center">
+<i class="ri-bank-line ri-lg text-primary mr-3"></i>
+<span>Net Banking</span>
+</div>
+<i class="ri-arrow-right-s-line"></i>
+</div>
+</div>
+<div class="mt-6 space-y-4 payment-forms hidden" id="cardPaymentForm">
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-1">Card Number</label>
+<input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-button text-sm" placeholder="1234 5678 9012 3456" maxlength="19">
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-1">Expiry Date</label>
+<input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-button text-sm" placeholder="MM/YY" maxlength="5">
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-1">CVV</label>
+<input type="password" class="w-full px-3 py-2 border border-gray-300 rounded-button text-sm" placeholder="123" maxlength="3">
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-1">Card Holder Name</label>
+<input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-button text-sm" placeholder="John Doe">
+</div>
+<button class="w-full bg-primary text-white py-3 rounded-button font-medium hover:bg-opacity-90 transition-colors whitespace-nowrap" onclick="processPayment()">Pay Now</button>
+</div>
+<div class="mt-6 space-y-4 payment-forms hidden" id="upiPaymentForm">
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-1">UPI ID</label>
+<input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-button text-sm" placeholder="username@upi">
+</div>
+<button class="w-full bg-primary text-white py-3 rounded-button font-medium hover:bg-opacity-90 transition-colors whitespace-nowrap" onclick="processPayment()">Pay Now</button>
+</div>
+<div class="mt-6 space-y-4 payment-forms hidden" id="netbankingPaymentForm">
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-1">Select Bank</label>
+<select class="w-full px-3 py-2 border border-gray-300 rounded-button text-sm">
+<option value="">Choose your bank</option>
+<option value="sbi">State Bank of India</option>
+<option value="hdfc">HDFC Bank</option>
+<option value="icici">ICICI Bank</option>
+<option value="axis">Axis Bank</option>
+</select>
+</div>
+<button class="w-full bg-primary text-white py-3 rounded-button font-medium hover:bg-opacity-90 transition-colors whitespace-nowrap" onclick="processPayment()">Pay Now</button>
+</div>
+</div>
+</div>
+<script>
+function showPaymentModal() {
+document.getElementById('paymentModal').classList.remove('hidden');
+document.getElementById('paymentModal').classList.add('flex');
+}
+function closePaymentModal() {
+document.getElementById('paymentModal').classList.add('hidden');
+document.getElementById('paymentModal').classList.remove('flex');
+}
+document.querySelectorAll('.payment-option').forEach(option => {
+option.addEventListener('click', function() {
+const method = this.dataset.method;
+document.querySelectorAll('.payment-forms').forEach(form => form.classList.add('hidden'));
+document.getElementById(`${method}PaymentForm`).classList.remove('hidden');
+});
+});
+function processPayment() {
+showNotification('Processing payment...');
+setTimeout(() => {
+closePaymentModal();
+showNotification('Payment successful! Order confirmed.');
+cart = [];
+localStorage.removeItem('cart');
+updateCartCount();
+}, 2000);
+}
+// Close modal when clicking outside
+document.getElementById('paymentModal').addEventListener('click', function(e) {
+if (e.target === this) {
+closePaymentModal();
+}
+});
+</script>
+</body>
+</html>
